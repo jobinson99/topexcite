@@ -9,7 +9,11 @@
     <style>
      body {
        width: 100%;
-       background: url(static/images/bg.jpg) center top repeat fixed;
+       background: url(static/images/bg.jpg) center top fixed;
+     }
+     h2 {
+       text-align: center;
+       margin-top: 25px;
      }
 
      .site-name {
@@ -17,14 +21,37 @@
        font-weight: bold;
        text-align: center;
        margin-top: 15%;
-text-shadow: #ee3333 -20px 0px 8px, #33ee33 20px 0px 5px;
+       text-shadow: #ee3333 -20px 0px 8px, #33ee33 20px 0px 5px;
      }
      .slogan {
        font-size: 200%;
        font-style: italic;
        text-align: center;
        margin-top: 25px;
-text-shadow: #ee3333 -20px 0px 8px, #33ee33 20px 0px 5px;
+       text-shadow: #ee3333 -20px 0px 8px, #33ee33 20px 0px 5px;
+     }
+     ul {
+       display: block;
+       float: left;	
+     }
+     li {
+       display: block;
+       float: left;
+       padding: 25px;
+       width: 220px;
+	height: 80px;
+	border: 1px solid rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.1);
+     }
+     li:hover {
+       background-color: rgba(0,255,0,0.2);
+     }
+     li a {
+	color: white;
+	text-decoration: none;
+     }
+     li a:hover {
+       color: gold;
      }
   </style>    
   </head>
@@ -33,5 +60,13 @@ text-shadow: #ee3333 -20px 0px 8px, #33ee33 20px 0px 5px;
 <p class="site-name">极璨科技</p>
 <p class="slogan">——专注新技术的开发和普及</p>
 
+<h2>技术转让</h2>
+<ul>
+<li><a href="/zh/tech-sale/">技术转让大全</a></li>
+</ul>
+<h2>技术研发</h2>
+<ul>
+<li></li>
+</ul>
   </body>
 </html>
