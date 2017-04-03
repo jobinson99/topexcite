@@ -534,6 +534,27 @@ p code,li code,pre,th,td,blockquote,aside,footer,
 
 
 /* :::: 文档结构样式 :::: */
+/* 文章抬头图片 */
+.title-img {
+  width: 100%;
+  height: 500px;
+	padding: 0px;
+	border-shadow: 0;
+}
+.title-img img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+
+    -webkit-filter: blur(1px); /* Chrome, Opera */
+       -moz-filter: blur(1px);
+        -ms-filter: blur(1px);    
+            filter: blur(1px);
+
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=1, MakeShadow=false); /* IE6~IE9 */
+}
+
 /* 或者颜色 #6C71C4 在小屏幕上好看 加文本阴影？ */
 h1,
 h2,
@@ -557,7 +578,7 @@ h6:hover {
 
 h1 {
     text-align: center;
-    padding: 20px 10px;
+    padding: 60px 10px;
     margin: 0;
 }
 h2,
@@ -565,13 +586,13 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 15px 5px 10px 40px;;
+    padding: 25px 5px 15px 40px;;
 }
 
 .post-abstract {
     padding: 5px 20px;
     margin-top: 0;
-    background-color: #C0FFC0;
+    background-color: #fdfddd;
     border-bottom: 1px solid #DCDCDC;
     border-top: 1px solid #DCDCDC;
 }
@@ -728,22 +749,23 @@ a:visited {
 
 /* :::: 文内列表属性 :::: */
 
-ol>:first-child {
-    border-top: 1px solid #dcdcdc;
-}
-
+/*
+ol>:first-child, 
 ul>:first-child {
     border-top: 1px solid #dcdcdc;
 }
+*/
 
 li {
-    border-bottom: 1px solid #dcdcdc;
+    border-left: 5px solid white;
+    border-bottom: 1px solid white;
     padding: 5px 0px 5px 10px;
     
 }
 
 li:hover {
     background: rgba(255,255,255,0.5);
+    border-left: 5px solid #dcdcdc;
 }
 
 /* ::代码块设定：code是行内，pre是多行:: */
@@ -1320,8 +1342,8 @@ aside:hover {
 /*
 /*****************************************************************************/
 footer {
-    font-size: 80%;
-    border-top: 10px dotted gray;
+    font-size: 90%;
+    border-top: 10px dotted #cccccc;
     padding-top: 15px;
 }
 
@@ -1332,11 +1354,12 @@ footer ul {
     padding: 0;
 }
 footer li {
-    width: 48%;
+    width: 43%;
     height: 70px;
     display: block;
     float: left;
     position: relative;
+    padding: 15px;
     border: 1px dotted white;
     color: gray;
     background-color: #eeeeee;
@@ -1446,4 +1469,3 @@ footer .rss-img {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
- 
