@@ -2,37 +2,72 @@
 <html>
     <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>拓帥科技</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css">
 
-	<style>
-	 body {
-	     width: 99%;
-	     background: url(static/images/globe-image-1.png) center top no-repeat;
-	     background-color: rgba(120,120,120,0.7);
-	 }
+<style>
+html, body {
+  position: relative;
+  height: 100%; 
+}
+body {
+    background: url(static/images/globe-image-1.png) center top no-repeat;
+    background-color: rgba(120,120,120,0.5);
+    font-size: 120%;
+    }
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    }
+.swipe-slide {
+    text-align: center;
+    font-size: 120%;
 
-	 .site-name {
-	     font-size: 450%;
-	     font-weight: bold;
-	     text-align: center;
-	     margin-top: 15%;
-	     text-shadow: red -20px 0px 8px, yellow 20px 0px 5px;
-	 }
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      }
 
-	 .slogan {
-	     font-size: 200%;
-	     font-style: italic;
-	     text-align: center;
-	     margin-top: 25px;
-	     text-shadow: gold -20px 0px 8px, white 20px 0px 5px;
-	 }
+.site-name {
+    font-size: 450%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 18%;
+    text-shadow: red -20px 0px 8px, yellow 20px 0px 5px;
+}
 
-	 h2,p {
-		text-align: center;
-	 }
+.slogan {
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+    text-shadow: gold -20px 0px 8px, white 20px 0px 5px;
+    }
 
+h2 {
+    font-size: 300%;
+    text-align: center;
+    margin-top: 10%;
+    }
+
+blockquote {
+    font-size: 150%;
+    background-color: rgba(255,255,0,0.1);
+    padding: 20px;
+    border-left: 8px white solid;
+}
+    
 	ul {
 
 	}
@@ -40,9 +75,9 @@
 	     display: inline-flex;
 		margin-left: -9px;
 	     padding: 25px;
-	     width: 250px;
+	     width: 25%;
 	     height: 60px;
-		border: 1px solid rgba(255,255,255,0.2);
+border: 1px solid rgba(255,255,255,0.2);
              background-color: rgba(255,255,255,0.1);
 	 }
 
@@ -89,57 +124,147 @@
   position: fixed;
   color: black;
 }
+
 	</style>    
     </head>
     
     <body>
 
-	<p class="site-name">拓帥科技</p>
-	<p class="slogan">——专注新技术的开发和普及</p>
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
 
+        <!-- Slides -->
+        <div class="swiper-slide">	
+
+<p class="site-name">拓帥科技</p>
+<p class="slogan">——专注新技术的开发和普及</p>
+
+<!-- 
 <div class="heng"></div>
 <div class="hengming">工艺</div>
 <div class="shu"></div>
 <div class="shuming">材料</div>
+-->
 
-	<h2>提供服务</h2>
-	    <li><a href="/zh/softcircuit/">小批量柔性电路制造</a></li>
-	    <li><a href="">冷热双调衣加工定制</a></li>
+</div>
 
-	<h2>技术转让/招商引资</h2>
 
-	<p>帮我转让或实现技术产业化的，可获得相应提成。</p>
+<div class="swiper-slide">
 
-	<ul>
-	    <li><a href="/zh/tech-sale/">技术转让大全</a></li>
-	</ul>
+<h2>关于我们</h2>
 
-	<h2>转让几个域名</h2>
+<blockquote>我们将结束 电脑、笔记本、手机时代，开创新的随身设备时代！！！！</blockquote>
 
-	<p>价格请有兴趣者自报。</p>
+<blockquote>大丈夫当世，当化万里黄沙为绿浪，万座山峦为天梯，万里碧波为渔场，万千劳作为机械。
+</blockquote>
+
+</div>
+
+<div class="swiper-slide">
+<h2>目前可提供的服务</h2>
+
+<ul>
+  <li><a href="zh/battery-belt/">腰带</a></li>
+  <li><a href="zh/cool-it/">冷热双调衣 加工定制</a></li>
+  <li><a href="/zh/softcircuit/">小批量柔性电路制造</a></li>
+</ul>
+</div>
+
+<div class="swiper-slide">
+<h2>技术转让/招商引资</h2>
+
+<p>帮我转让或实现技术产业化的，可获得相应提成。</p>
+
+<ul>
+<li><a href="">遥控可扩展空中线性多点喷洒系统</a></li>
+</ul>
+</div>
+
+<div class="swiper-slide">
+<h2>转让几个域名</h2>
+
+<p>价格请有兴趣者自报。</p>
 
 	<ul>
 	    <li><a href="http://sodis.ga">日语常用语 sodis.ga</a></li>
 	    <li><a href="http://lvzhengshi.com">律证师 lvzhengshi.com</a></li>
-	    <li><a href="http://topexcite.com">本网站 最激动人心，最精彩 topexcite.com</a></li>
+	    <li><a href="http://topexcite.com">本网站不打算转让 最激动人心，最精彩 topexcite.com</a></li>
 	</ul>
+</div>
 
-	<h2>技术研发</h2>
+<div class="swiper-slide">
+<h2>技术研发</h2>
 
 <blockquote>独自走在没人走过的野山路，刚好路边开了不少鲜艳美丽的野花，就顺手摘了不少。</blockquote>
 
 	<ul>
 	    <li><a href="">软件：挖了不少坑</a></li>
 	    <li><a href="">硬件：填了不少坑</a></li>
+<li><a href="/zh/tech-sale/">[过时]技术转让大全</a></li>
 	</ul>
-
-	<h2>联系方式</h2>
+</div>
+<div class="swiper-slide">
+<h2>联系方式</h2>
 
 	<ul>
 	    <li><a href="">扣扣：2963993212</a></li>
 	    <li><a href="">微信：ahahyeah99</a></li>
 	    <li><a href="">电邮：jobinson99@hotmail.com</a></li>
 	</ul>
+</div>
+
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.esm.bundle.js"></script>
+<script>
+window.onload = function () {
+    //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    spaceBetween: 30,
+    // 开启鼠标滚动
+    mousewheel: true,
+    // 开启键盘滚动
+    keyboard: {
+        enable: true,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+ };
+</script>
 
 <script>
 var _hmt = _hmt || [];
